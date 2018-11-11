@@ -10,10 +10,11 @@ import UIKit
 
 class BSAnimatedLabel: UILabel {
     
+    var animationDuration : TimeInterval
+
     private var displayLink : CADisplayLink?
     private(set) var isAnimating = false
-    var animationDuration : TimeInterval
-    var startTime : CFTimeInterval
+    private var startTime : CFTimeInterval
     private var textToDraw : String?
     
     override init(frame: CGRect) {
